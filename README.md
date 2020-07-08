@@ -264,7 +264,17 @@ WHERE customer_id IN
   * account `budget` is required.
 
 ```SQL
+CREATE TABLE public.accounts
+(
+    id bigint NOT NULL DEFAULT nextval('accounts_id_seq'::regclass),
+    budget numeric NOT NULL,
+    name "char"[] UNIQUE,
+    CONSTRAINT accounts_pkey PRIMARY KEY (id)
+)
 
+
+ALTER TABLE public.accounts
+    OWNER to postgres;
 ```
 
 To see the script
