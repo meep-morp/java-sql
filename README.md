@@ -249,7 +249,7 @@ WHERE customer_id IN
      WHERE o.Order_Date is NULL)
 ```
 
-* [ ] ***Create Database and Table: After creating the database, tables, columns, and constraint, generate the script necessary to recreate the database. This script is what you will submit for review***
+* [ x ] ***Create Database and Table: After creating the database, tables, columns, and constraint, generate the script necessary to recreate the database. This script is what you will submit for review***
 
 * use pgAdmin to create a database, naming it `budget`.
 * add an `accounts` table with the following _schema_:
